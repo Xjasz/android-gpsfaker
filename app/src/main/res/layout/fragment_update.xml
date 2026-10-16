@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/llRoot"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="20dp">
+
+    <RelativeLayout
+        android:id="@+id/rlHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/header"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:id="@+id/tvHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="Attention"
+            android:textColor="#ffffff"
+            android:textSize="30dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvSubHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvHeader"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:text="Update Required!"
+            android:textColor="#ffffff"
+            android:textSize="20dp"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="7dp"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/rlMainView"
+        android:layout_below="@+id/rlHeader"
+        android:background="#2b2b2b"/>
+
+    <View
+        android:layout_width="7dp"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/rlMainView"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/rlHeader"
+        android:background="#2b2b2b"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@+id/rlMainView"
+        android:layout_marginTop="-12dp"
+        android:background="@drawable/rounded_bottom_footer"/>
+
+    <RelativeLayout
+        android:id="@+id/rlMainView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlHeader"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:background="#ffffff"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/tvInformation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:text="Please click update to get the latest version of the app."
+            android:textColor="#252525"
+            android:textSize="17dp"
+            android:textStyle="bold"/>
+
+
+        <TextView
+            android:id="@+id/tvUpdate"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/tvInformation"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_green"
+            android:contentDescription="Start"
+            android:gravity="center"
+            android:maxLines="1"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:text="Update"
+            android:textColor="#FFFFFF"
+            android:textSize="25dp"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

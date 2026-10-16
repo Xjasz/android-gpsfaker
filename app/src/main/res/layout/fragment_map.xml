@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#abb2b4">
+
+    <RelativeLayout
+        android:id="@+id/map_relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <fragment
+            android:id="@+id/mainMapFragment"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/ivMapType"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/maptype"
+        android:scaleType="fitCenter"
+        android:src="@drawable/button_darken_round"/>
+
+    <ImageView
+        android:id="@+id/ivCompass"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/ivMapType"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/maplocator"
+        android:scaleType="fitCenter"
+        android:src="@drawable/button_darken_round"/>
+
+
+    <ImageView
+        android:id="@+id/ivController"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/button_round_green"
+        android:padding="3dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/controller"/>
+
+    <ImageView
+        android:id="@+id/ivSearch"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/button_round_green"
+        android:padding="13dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/searchsettings"/>
+
+
+    <ToggleButton
+        android:id="@+id/tbSetStop"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/toggle_set_stop"
+        android:checked="false"
+        android:contentDescription="Start"
+        android:gravity="center"
+        android:maxLines="1"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textColor="#FFFFFF"
+        android:textOff="Set"
+        android:textOn="Stop"
+        android:textSize="18dp"
+        android:textStyle="bold"/>
+
+    <RelativeLayout
+        android:id="@+id/rlSearchBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#c3000000"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/rlSearchLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="83dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="70dp"
+            android:background="@drawable/listview_background">
+
+            <EditText
+                android:id="@+id/etLat"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="65dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/etroundedges"
+                android:hint="Latitude"
+                android:imeOptions="actionSearch"
+                android:inputType="numberDecimal|numberSigned"
+                android:maxLines="1"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textColor="#363535"
+                android:textSize="18dp"/>
+
+            <EditText
+                android:id="@+id/etLon"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:layout_below="@+id/etLat"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="65dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/etroundedges"
+                android:hint="Longitude"
+                android:imeOptions="actionSearch"
+                android:inputType="numberDecimal|numberSigned"
+                android:maxLines="1"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textColor="#363535"
+                android:textSize="18dp"/>
+
+            <ImageView
+                android:id="@+id/ivGpsSearch"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/button_round_green"
+                android:padding="13dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/searchsettings"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<resources>
+
+    <style name="Theme.MainTheme" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="android:windowBackground">@android:color/black</item>
+    </style>
+</resources>

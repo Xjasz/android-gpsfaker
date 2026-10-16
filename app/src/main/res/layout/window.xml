@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="145dp"
+                android:layout_height="145dp">
+
+        <ImageView
+            android:id="@+id/ivExpand"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/button_round_orange"
+            android:padding="6dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/expand"/>
+
+        <RelativeLayout
+            android:id="@+id/vInnerController"
+            android:layout_width="145dp"
+            android:layout_height="145dp"
+            android:background="@drawable/grey_controller">
+
+            <RelativeLayout
+                android:layout_width="135dp"
+                android:layout_height="135dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/circle_grey">
+
+                <ImageView
+                    android:id="@+id/ivUp"
+                    android:layout_width="35dp"
+                    android:layout_height="45dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/button_up"
+                    android:padding="6dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/up"/>
+
+                <ImageView
+                    android:id="@+id/ivLeft"
+                    android:layout_width="45dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/button_left"
+                    android:padding="6dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/left"/>
+
+                <ImageView
+                    android:id="@+id/ivRight"
+                    android:layout_width="45dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/button_right"
+                    android:padding="6dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/right"/>
+
+                <ImageView
+                    android:id="@+id/ivDown"
+                    android:layout_width="35dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="5dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/button_down"
+                    android:padding="6dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/down"/>
+
+                <View
+                    android:id="@+id/ivCenter"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/grey_radial"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/vOuterController"
+                android:layout_width="145dp"
+                android:layout_height="145dp">
+
+                <ImageView
+                    android:id="@+id/ivMinimize"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/button_round_orange"
+                    android:padding="6dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/minus"/>
+
+                <ImageView
+                    android:id="@+id/ivClose"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/button_round_red"
+                    android:padding="8dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/close"/>
+
+                <ImageView
+                    android:id="@+id/ivMove"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/button_round_blue"
+                    android:padding="8dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/move"/>
+
+                <ImageView
+                    android:id="@+id/ivMap"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="5dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/button_round_green"
+                    android:padding="8dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/map"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+</RelativeLayout>

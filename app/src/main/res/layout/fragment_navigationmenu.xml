@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/viewroot"
+    android:layout_width="200dp"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+
+    <RelativeLayout
+        android:id="@+id/rlHome"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/button_sub">
+
+        <ImageView
+            android:id="@+id/ivHome"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="none"
+            android:padding="8dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/home" />
+
+        <TextView
+            android:id="@+id/tvHome"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/ivHome"
+            android:contentDescription="none"
+            android:gravity="center_vertical"
+            android:text="Home"
+            android:textColor="#ecebeb"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlContactUs"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/rlHome"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/button_sub">
+
+        <ImageView
+            android:id="@+id/ivContactUs"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="none"
+            android:padding="8dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/contact" />
+
+        <TextView
+            android:id="@+id/tvContact"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/ivContactUs"
+            android:contentDescription="none"
+            android:gravity="center_vertical"
+            android:text="Contact Us"
+            android:textColor="#ecebeb"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlShare"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/rlContactUs"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/button_sub">
+
+        <ImageView
+            android:id="@+id/ivShare"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="none"
+            android:padding="8dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/share" />
+
+        <TextView
+            android:id="@+id/tvShare"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/ivShare"
+            android:contentDescription="none"
+            android:gravity="center_vertical"
+            android:text="Share"
+            android:textColor="#ecebeb"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlRate"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/rlShare"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/button_sub">
+
+        <ImageView
+            android:id="@+id/ivRate"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="none"
+            android:padding="8dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/rate" />
+
+        <TextView
+            android:id="@+id/tvRate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/ivRate"
+            android:contentDescription="none"
+            android:gravity="center_vertical"
+            android:text="Rate"
+            android:textColor="#ecebeb"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlDonate"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/rlRate"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/button_sub">
+
+        <ImageView
+            android:id="@+id/ivDonate"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="none"
+            android:padding="8dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/donate" />
+
+        <TextView
+            android:id="@+id/tvDonate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/ivDonate"
+            android:contentDescription="none"
+            android:gravity="center_vertical"
+            android:text="Donate"
+            android:textColor="#ecebeb"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlInfo"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/rlDonate"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/button_sub">
+
+        <ImageView
+            android:id="@+id/ivInfo"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="none"
+            android:padding="8dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/info" />
+
+        <TextView
+            android:id="@+id/tvInfo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/ivInfo"
+            android:contentDescription="none"
+            android:gravity="center_vertical"
+            android:text="Info"
+            android:textColor="#ecebeb"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlLogout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/rlInfo"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/button_sub">
+
+        <ImageView
+            android:id="@+id/ivLogout"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="none"
+            android:padding="8dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/logout" />
+
+        <TextView
+            android:id="@+id/tvLogout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/ivLogout"
+            android:contentDescription="none"
+            android:gravity="center_vertical"
+            android:text="Logout"
+            android:textColor="#ecebeb"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

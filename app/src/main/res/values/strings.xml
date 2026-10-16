@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Fake Gps Controller</string>
+    <string name="status_bar">StatusBar</string>
+</resources>
